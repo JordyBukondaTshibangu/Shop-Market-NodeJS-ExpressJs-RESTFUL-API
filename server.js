@@ -2,12 +2,12 @@ const express = require('express')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
+require('./api/database/mongoose');
 const app = express()
 const productRoutes = require('./api/route/products')
 const orderRoutes = require('./api/route/orders')
 const userRoutes = require('./api/route/user')
 
-mongoose.connect('mongodb+srv://node-shop-rest-api:'+ process.env.MONGO_ATLAS_PW +'@node-shop-rest-api-hodya.mongodb.net/test?retryWrites=true&w=majority',{ useNewUrlParser: true})
 mongoose.Promise = global.Promise;
 app.use(morgan('dev'))
 app.use(bodyParser.json())
