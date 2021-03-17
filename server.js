@@ -43,6 +43,5 @@ app.use((error, req, res, next) => {
 })
 
 const port = process.env.PORT || 3000
-app.listen(port, ()=>{ 
-    console.log(` The server is up running on port: ${port}`)
-})
+
+app.listen(port, () => console.log(` The server is up running on port: ${port}`))
