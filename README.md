@@ -35,8 +35,8 @@ Bellow are the links to help you installing it:
 
 ## Launch
 
-*  git clone 
-* cd 
+*  git clone git@github.com:JordyBukondaTshibangu/SHOP-MARKET-RESTFUL-EXPRESS-API-.git
+* cd SHOP-MARKET-RESTFUL-EXPRESS-API-
 * npm install 
 * npm run dev
 
@@ -85,9 +85,9 @@ The routes are :
     7. UPDATE PRODUCT ==> PUT ==> /products/:productId
     8. DELETE PRODUCT ==> DELETE ==> /products/:productId
     9. CREATE ORDER ==> POST ==> /orders
-    10. READ ALL ORDERS ==> GET ==> /orders
-    11. READ SINGLE ORDER ==> GET ==> /orders/:orderId
-    12. DELETE ORDER ==> DELETE ==> /orders/:orderId
+    10.READ ALL ORDERS ==> GET ==> /orders
+    11.READ SINGLE ORDER ==> GET ==> /orders/:orderId
+    12.DELETE ORDER ==> DELETE ==> /orders/:orderId
 
 - [x] MIDDLEWARE ==> Auth
 	
