@@ -10,6 +10,11 @@
 ## Introduction 
 
 Simple RESTFUL API created using Node.JS, Express.JS and MongoDB.
+You can use POSTMAN, Insomnia or any other tool to test your API.
+
+---> https://www.postman.com/
+
+---> https://insomnia.rest/download
 
 ## Technologies
 
