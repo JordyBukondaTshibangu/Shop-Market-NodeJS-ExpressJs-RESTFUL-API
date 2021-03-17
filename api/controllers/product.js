@@ -36,7 +36,6 @@ Product.find()
 })
 }
 exports.products_create = (req, res, next) => {
-console.log(req.file)
 
 const product = new Product({
     _id : new mongoose.Types.ObjectId(),
@@ -108,8 +107,6 @@ Product
 exports.product_update = (req, res) => {
 const id = req.params.productId
 const update = req.body
-console.log(req.body)
-console.log(update)
 Product.findByIdAndUpdate({_id : id}, update)
 .exec()
 .then(product => {
