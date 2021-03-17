@@ -70,6 +70,7 @@ User.find({email : req.body.email})
             })
             return res.status(200).json({
                 message : 'Authentication Successfull',
+                user,
                 token 
             })
         }

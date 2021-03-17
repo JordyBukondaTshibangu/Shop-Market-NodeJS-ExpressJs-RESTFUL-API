@@ -109,6 +109,7 @@ exports.product_update = (req, res) => {
 const id = req.params.productId
 const update = req.body
 console.log(req.body)
+console.log(update)
 Product.findByIdAndUpdate({_id : id}, update)
 .exec()
 .then(product => {
